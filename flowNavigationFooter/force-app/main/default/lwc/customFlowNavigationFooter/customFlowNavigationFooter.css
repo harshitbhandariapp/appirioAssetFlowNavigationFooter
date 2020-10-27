@@ -17,7 +17,7 @@
 }
 
 .customFlowNavigationFooter .slds-button {
-  white-space: nowrap;
+ white-space: nowrap;
   /* background: var(--lwc-colorBackgroundButtonBrand); */
   border-radius: 40px;
   font-family: var(--lwc-fontFamily);
@@ -25,12 +25,14 @@
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+  justify-content: center;
   /* color: #fff; */
   min-height: 45px;
   padding-left: 15px;
   padding-right: 15px;
   /* border: 0; */
   min-width: 143px;
+  margin: 0.12rem;
   transition: all 0.3s ease-in-out;
 }
 
@@ -42,15 +44,27 @@
 .customFlowNavigationFooter .slds-button[disabled] {
   cursor: not-allowed;
   pointer-events: none;
-  background: var(--lwc-colorBackgroundButtonBrand);
-  border-color: var(--lwc-colorBackgroundButtonBrand);
+  background: rgb(112, 110, 107);
+  border-color: rgb(112, 110, 107);
   opacity: 0.4;
 }
-.ml-auto {
+.prevLeft {
+  margin-right: auto;
+}
+
+.nextRight {
   margin-left: auto;
 }
 
-.mr-auto {
+.prevLeft+.nextCenter {
+  margin-right: auto;
+}
+
+.prevCenter {
+  margin-left: auto;
+}
+
+.prevCenter+.nextCenter {
   margin-right: auto;
 }
 

@@ -25,17 +25,17 @@ export default class CustomFlowNavigationFooter extends LightningElement {
 
   get previousBtnAllignClass() {
     return this.previousButtonAlignment.toLowerCase() == 'left'
-      ? `mr-auto`
+      ? `prevLeft`
       : this.previousButtonAlignment.toLowerCase() == 'center'
-        ? `ml-auto mr-auto`
+        ? `prevCenter`
         : ``;
   }
 
   get nextBtnAllignClass() {
     return this.nextButtonAlignment.toLowerCase() == 'right'
-      ? `ml-auto`
+      ? `nextRight`
       : this.nextButtonAlignment.toLowerCase() == 'center'
-        ? `ml-auto mr-auto`
+        ? `nextCenter`
         : ``;
   }
 

@@ -1,0 +1,11 @@
+<template>
+  <div if:true={isLoaded} class="slds-grid slds-grid_align-center customFlowNavigationFooter">
+    <div class={previousBtnAllignClass}>
+      <button if:true={showPreviousButton} class="previous slds-button" onclick={prev}>{previousButtonLabel}</button>
+    </div>
+    <div class={nextBtnAllignClass}>
+      <button if:true={showBypassButton} class="bypass slds-button" onclick={skip}>{bypassButtonLabel}</button>
+      <button if:true={showNextButton} class="next slds-button" onclick={next}>{nextButtonLabel}</button>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Custom Flow Navigation Footer</masterLabel>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen" >
+            <property name="showNextButton" type="Boolean" label="Show Next Button" default="true" role="inputOnly" />
+            <property name="nextButtonLabel" type="string" label="Next Button Label" default="Next" role="inputOnly" />
+            <property name="nextButtonAlignment" type="string" label="Next Button Alignment" default="Right" description="(Center/Right)" role="inputOnly" />
+            <property name="nextButtonBackgroundColor" type="string" label="Next Button Background Color" default="#0070d2" role="inputOnly" />
+            <property name="nextButtonTextColor" type="string" label="Next Button Text Color" default="white" role="inputOnly" />
+            <property name="showPreviousButton" type="Boolean" label="Show Previous Button" default="false" role="inputOnly" />
+            <property name="previousButtonLabel" type="string" label="Previous Button Label" default="Previous" role="inputOnly" />
+            <property name="previousButtonAlignment" type="string" label="Previous Button Alignment" default="Left" description="(Left/Center)" role="inputOnly" />
+            <property name="previousButtonBackgroundColor" type="string" label="Previous Button Background Color" default="#0070d2" role="inputOnly" />
+            <property name="previousButtonTextColor" type="string" label="Previous Button Text Color" default="white" role="inputOnly" />
+            <property name="showBypassButton" type="Boolean" label="Show Bypass Button" role="inputOnly" />
+            <property name="bypassButtonLabel" type="string" label="Bypass Button Label" role="inputOnly" />
+            <property name="bypassButtonBackgroundColor" type="string" label="Bypass Button Background Color" default="white" role="inputOnly" />
+            <property name="bypassButtonTextColor" type="string" label="Bypass Button Text Color" default="#0070d2" role="inputOnly" />
+            <property name="finishButtonLabel" type="string" label="Finish Button Label" role="inputOnly" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

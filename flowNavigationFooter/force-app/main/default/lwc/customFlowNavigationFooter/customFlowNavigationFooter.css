@@ -1,0 +1,91 @@
+.customFlowNavigationFooter {
+  width: 100%;
+  padding: 10px 0 40px;
+}
+
+/*
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    */
+
+@media (max-width: 1024px) {
+  .customFlowNavigationFooter {
+    padding: 10px 20px 10px;
+    border-top: 1px solid #CDD3DB;
+  }
+}
+
+.customFlowNavigationFooter .slds-button {
+  white-space: nowrap;
+  /* background: var(--lwc-colorBackgroundButtonBrand); */
+  border-radius: 40px;
+  font-family: var(--lwc-fontFamily);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  /* color: #fff; */
+  min-height: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* border: 0; */
+  min-width: 143px;
+  transition: all 0.3s ease-in-out;
+}
+
+.customFlowNavigationFooter .slds-button:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  /* background-color: var(--lwc-colorBackgroundButtonBrandHover); */
+}
+
+.customFlowNavigationFooter .slds-button[disabled] {
+  cursor: not-allowed;
+  pointer-events: none;
+  background: var(--lwc-colorBackgroundButtonBrand);
+  border-color: var(--lwc-colorBackgroundButtonBrand);
+  opacity: 0.4;
+}
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.customFlowNavigationFooter .previous {
+  background-color: var(--previousButtonBackgroundColor);
+  color: var(--previousButtonTextColor);
+}
+
+.customFlowNavigationFooter .previous:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--previousButtonBackgroundColor);
+  color: var(--previousButtonTextColor);
+}
+
+.customFlowNavigationFooter .next {
+  background-color: var(--nextButtonBackgroundColor);
+  color: var(--nextButtonTextColor);
+}
+
+.customFlowNavigationFooter .next:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--nextButtonBackgroundColor);
+  color: var(--nextButtonTextColor);
+}
+
+.customFlowNavigationFooter .bypass {
+  background-color: var(--bypassButtonBackgroundColor);
+  border-color: var(--bypassButtonTextColor);
+  color: var(--bypassButtonTextColor);
+}
+
+.customFlowNavigationFooter .bypass:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--bypassButtonBackgroundColor);
+  border-color: var(--bypassButtonTextColor);
+  color: var(--bypassButtonTextColor);
+}
+
